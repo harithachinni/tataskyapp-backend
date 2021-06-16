@@ -7,7 +7,7 @@ public interface IServiceRequestService {
 	
 	ServiceRequest createServiceRequestForUser(Account account);
 
-	ServiceRequest openedServiceRequest(Long accountId);
+	ServiceRequest openedServiceRequest(Account account);
 
 	ServiceRequest close(Long serviceRequestId);
 }

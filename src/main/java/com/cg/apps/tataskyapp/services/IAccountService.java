@@ -1,6 +1,7 @@
 package com.cg.apps.tataskyapp.services;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import com.cg.apps.tataskyapp.entities.Account;
 import com.cg.apps.tataskyapp.exception.AccountNotFoundException;
@@ -24,4 +25,6 @@ public interface IAccountService {
 	int countAccounts();
 
 	void removePackForAccount(Account account, Pack pack);
+
+	public  List<Account> getacct();
 }

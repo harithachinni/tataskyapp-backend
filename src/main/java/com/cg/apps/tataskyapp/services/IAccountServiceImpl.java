@@ -1,6 +1,7 @@
 package com.cg.apps.tataskyapp.services;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.LoggerFactory;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Service;
 import com.cg.apps.tataskyapp.entities.Account;
 import com.cg.apps.tataskyapp.repository.IAccountRepository;
 import com.cg.apps.tataskyapp.entities.Pack;
+import com.cg.apps.tataskyapp.exception.AccountNotFoundException;
 import com.cg.apps.tataskyapp.services.IAccountServiceImpl;
 import ch.qos.logback.classic.Logger;
 
@@ -29,12 +31,11 @@ public class IAccountServiceImpl implements IAccountService {
 	}
 
 	@Override
-	public Account findById(Long accountId) {
+	public Account findById(Long accountId) throws AccountNotFoundException {
 		logger.info("******** Account found for id *******" + accountId);
 		Optional<Account> opt = aDao.findById(accountId);
-//		if(!opt.isPresent()) {
-//		throw new AccountNotFoundException("Account not found for id: "+accountId);
-//	}
+	if(!opt.isPresent()) {
+		throw new AccountNotFoundException("Account not found for id: "+accountId);	}
 		Account acc = opt.get();
 		return acc;
 	}
@@ -75,6 +76,14 @@ public class IAccountServiceImpl implements IAccountService {
 		acc.setCurrentPack(null);
 		update(acc);
 	}
+
+	@Override
+	public List<Account> getacct() {
+		// TODO Auto-generated method stub
+		return aDao.findAll();
+	}
+
+	
 
 //	@Override
 //	public int countCreatedAccounts(LocalDate startDate, LocalDate endDate) {

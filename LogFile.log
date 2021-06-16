@@ -1,659 +1,191 @@
-2021-05-22 19:18:59 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Starting TataSkyApplicationNewApplication using Java 15.0.2 on panduu with PID 10188 (C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew\bin\main started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
-2021-05-22 19:18:59 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - No active profile set, falling back to default profiles: default
-2021-05-22 19:19:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-22 19:19:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-22 19:19:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-22 19:19:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 5 JPA repository interfaces.
-2021-05-22 19:19:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2021-05-22 19:19:06 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-05-22 19:19:06 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 19:19:06 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-05-22 19:19:06 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6270 ms
-2021-05-22 19:19:07 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-22 19:19:08 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
-2021-05-22 19:19:08 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-05-22 19:19:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-05-22 19:19:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-05-22 19:19:10 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2021-05-22 19:19:16 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-22 19:19:16 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-22 19:19:16 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-05-22 19:19:17 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-05-22 19:19:17 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 19:19:18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
-2021-05-22 19:19:18 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Started TataSkyApplicationNewApplication in 19.673 seconds (JVM running for 21.535)
-2021-05-22 19:25:05 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-22 19:25:05 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-05-22 19:25:05 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-2021-05-22 19:28:01 [http-nio-8088-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'accountId' for method parameter type Account is present but converted to null]
-2021-05-22 19:34:59 [Thread-5] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-22 19:34:59 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-05-22 19:34:59 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2021-05-22 19:34:59 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2021-05-22 19:35:00 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Starting TataSkyApplicationNewApplication using Java 15.0.2 on panduu with PID 10188 (C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew\bin\main started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
-2021-05-22 19:35:00 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - No active profile set, falling back to default profiles: default
-2021-05-22 19:35:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-22 19:35:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 5 JPA repository interfaces.
-2021-05-22 19:35:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2021-05-22 19:35:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-05-22 19:35:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 19:35:01 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-05-22 19:35:01 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1224 ms
-2021-05-22 19:35:01 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-22 19:35:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2021-05-22 19:35:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2021-05-22 19:35:01 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2021-05-22 19:35:02 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-22 19:35:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-22 19:35:02 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-05-22 19:35:02 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-05-22 19:35:02 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 19:35:02 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
-2021-05-22 19:35:02 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Started TataSkyApplicationNewApplication in 2.199 seconds (JVM running for 965.612)
-2021-05-22 19:35:02 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2021-05-22 19:35:05 [Thread-9] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-22 19:35:05 [Thread-9] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-05-22 19:35:05 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-2021-05-22 19:35:05 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-2021-05-22 19:35:05 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Starting TataSkyApplicationNewApplication using Java 15.0.2 on panduu with PID 10188 (C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew\bin\main started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
-2021-05-22 19:35:05 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - No active profile set, falling back to default profiles: default
-2021-05-22 19:35:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-22 19:35:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
-2021-05-22 19:35:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2021-05-22 19:35:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-05-22 19:35:05 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 19:35:05 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-05-22 19:35:05 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 364 ms
-2021-05-22 19:35:05 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-22 19:35:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-2021-05-22 19:35:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-2021-05-22 19:35:05 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2021-05-22 19:35:06 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-22 19:35:06 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-22 19:35:06 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-05-22 19:35:06 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-05-22 19:35:06 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 19:35:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
-2021-05-22 19:35:06 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Started TataSkyApplicationNewApplication in 1.225 seconds (JVM running for 969.437)
-2021-05-22 19:35:06 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2021-05-22 19:36:07 [Thread-15] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-22 19:36:07 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-05-22 19:36:07 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-2021-05-22 19:36:07 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-2021-05-22 19:36:07 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Starting TataSkyApplicationNewApplication using Java 15.0.2 on panduu with PID 10188 (C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew\bin\main started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
-2021-05-22 19:36:07 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - No active profile set, falling back to default profiles: default
-2021-05-22 19:36:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-22 19:36:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
-2021-05-22 19:36:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2021-05-22 19:36:08 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-05-22 19:36:08 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 19:36:08 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-05-22 19:36:08 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 388 ms
-2021-05-22 19:36:08 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-22 19:36:08 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
-2021-05-22 19:36:08 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
-2021-05-22 19:36:08 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2021-05-22 19:36:09 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-22 19:36:09 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-22 19:36:09 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-05-22 19:36:09 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-05-22 19:36:09 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 19:36:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
-2021-05-22 19:36:09 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Started TataSkyApplicationNewApplication in 1.415 seconds (JVM running for 1032.409)
-2021-05-22 19:36:09 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2021-05-22 19:39:08 [Thread-21] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-22 19:39:08 [Thread-21] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-05-22 19:39:08 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
-2021-05-22 19:39:08 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
-2021-05-22 19:39:08 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Starting TataSkyApplicationNewApplication using Java 15.0.2 on panduu with PID 10188 (C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew\bin\main started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
-2021-05-22 19:39:08 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - No active profile set, falling back to default profiles: default
-2021-05-22 19:39:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-22 19:39:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 5 JPA repository interfaces.
-2021-05-22 19:39:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
-2021-05-22 19:39:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-05-22 19:39:09 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 19:39:09 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-05-22 19:39:09 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 534 ms
-2021-05-22 19:39:09 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-22 19:39:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
-2021-05-22 19:39:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
-2021-05-22 19:39:09 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2021-05-22 19:39:09 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-22 19:39:09 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-22 19:39:09 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-05-22 19:39:09 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-05-22 19:39:10 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 19:39:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
-2021-05-22 19:39:10 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Started TataSkyApplicationNewApplication in 1.53 seconds (JVM running for 1213.113)
-2021-05-22 19:39:10 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2021-05-22 19:39:39 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-22 19:39:39 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-05-22 19:39:39 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2021-05-22 19:39:39 [http-nio-8088-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [12] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [12] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]] with root cause
-java.lang.IllegalArgumentException: Parameter value [12] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]
-	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:54) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:27) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.QueryParameterBindingImpl.validate(QueryParameterBindingImpl.java:90) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:55) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:494) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:115) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$BindableQuery.setParameter(QueryParameterSetter.java:327) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.lambda$setParameter$4(QueryParameterSetter.java:118) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$ErrorHandling$1.execute(QueryParameterSetter.java:141) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:118) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:82) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:74) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:95) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractStringBasedJpaQuery.doCreateQuery(AbstractStringBasedJpaQuery.java:92) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:227) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:155) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:143) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:152) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.6.jar:5.3.6]
-	at com.sun.proxy.$Proxy162.findOpenedServiceRequest(Unknown Source) ~[na:na]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl.openedServiceRequest(IServiceRequestServiceImpl.java:32) ~[main/:na]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl$$FastClassBySpringCGLIB$$fdfa8c4d.invoke(<generated>) ~[main/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.6.jar:5.3.6]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl$$EnhancerBySpringCGLIB$$e24f3d34.openedServiceRequest(<generated>) ~[main/:na]
-	at com.cg.apps.tataskyapp.controllers.ServiceRequestController.openedServiceRequest(ServiceRequestController.java:56) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-2021-05-22 19:40:00 [http-nio-8088-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [13] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [13] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]] with root cause
-java.lang.IllegalArgumentException: Parameter value [13] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]
-	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:54) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:27) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.QueryParameterBindingImpl.validate(QueryParameterBindingImpl.java:90) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:55) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:494) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:115) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$BindableQuery.setParameter(QueryParameterSetter.java:327) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.lambda$setParameter$4(QueryParameterSetter.java:118) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$ErrorHandling$1.execute(QueryParameterSetter.java:141) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:118) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:82) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:74) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:95) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractStringBasedJpaQuery.doCreateQuery(AbstractStringBasedJpaQuery.java:92) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:227) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:155) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:143) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:152) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.6.jar:5.3.6]
-	at com.sun.proxy.$Proxy162.findOpenedServiceRequest(Unknown Source) ~[na:na]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl.openedServiceRequest(IServiceRequestServiceImpl.java:32) ~[main/:na]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl$$FastClassBySpringCGLIB$$fdfa8c4d.invoke(<generated>) ~[main/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.6.jar:5.3.6]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl$$EnhancerBySpringCGLIB$$e24f3d34.openedServiceRequest(<generated>) ~[main/:na]
-	at com.cg.apps.tataskyapp.controllers.ServiceRequestController.openedServiceRequest(ServiceRequestController.java:56) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-2021-05-22 19:41:08 [http-nio-8088-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [2] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [2] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]] with root cause
-java.lang.IllegalArgumentException: Parameter value [2] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]
-	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:54) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:27) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.QueryParameterBindingImpl.validate(QueryParameterBindingImpl.java:90) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:55) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:494) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:115) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$BindableQuery.setParameter(QueryParameterSetter.java:327) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.lambda$setParameter$4(QueryParameterSetter.java:118) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$ErrorHandling$1.execute(QueryParameterSetter.java:141) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:118) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:82) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:74) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:95) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractStringBasedJpaQuery.doCreateQuery(AbstractStringBasedJpaQuery.java:92) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:227) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:155) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:143) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:152) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.6.jar:5.3.6]
-	at com.sun.proxy.$Proxy162.findOpenedServiceRequest(Unknown Source) ~[na:na]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl.openedServiceRequest(IServiceRequestServiceImpl.java:32) ~[main/:na]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl$$FastClassBySpringCGLIB$$fdfa8c4d.invoke(<generated>) ~[main/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.6.jar:5.3.6]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl$$EnhancerBySpringCGLIB$$e24f3d34.openedServiceRequest(<generated>) ~[main/:na]
-	at com.cg.apps.tataskyapp.controllers.ServiceRequestController.openedServiceRequest(ServiceRequestController.java:56) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-2021-05-22 19:41:57 [http-nio-8088-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.cg.apps.tataskyapp.exception.RequestNotFoundException: request not found for id: 2]
-2021-05-22 19:43:37 [http-nio-8088-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.cg.apps.tataskyapp.exception.RequestNotFoundException: request not found for id: 2]
-2021-05-22 19:47:29 [http-nio-8088-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [22] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [22] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]] with root cause
-java.lang.IllegalArgumentException: Parameter value [22] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]
-	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:54) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:27) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.QueryParameterBindingImpl.validate(QueryParameterBindingImpl.java:90) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:55) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:494) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:115) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$BindableQuery.setParameter(QueryParameterSetter.java:327) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.lambda$setParameter$4(QueryParameterSetter.java:118) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$ErrorHandling$1.execute(QueryParameterSetter.java:141) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:118) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:82) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:74) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:95) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractStringBasedJpaQuery.doCreateQuery(AbstractStringBasedJpaQuery.java:92) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:227) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:155) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:143) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:152) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.6.jar:5.3.6]
-	at com.sun.proxy.$Proxy162.findOpenedServiceRequest(Unknown Source) ~[na:na]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl.openedServiceRequest(IServiceRequestServiceImpl.java:32) ~[main/:na]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl$$FastClassBySpringCGLIB$$fdfa8c4d.invoke(<generated>) ~[main/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.6.jar:5.3.6]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl$$EnhancerBySpringCGLIB$$e24f3d34.openedServiceRequest(<generated>) ~[main/:na]
-	at com.cg.apps.tataskyapp.controllers.ServiceRequestController.openedServiceRequest(ServiceRequestController.java:56) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-2021-05-22 19:47:47 [http-nio-8088-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [2] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [2] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]] with root cause
-java.lang.IllegalArgumentException: Parameter value [2] did not match expected type [com.cg.apps.tataskyapp.entities.Account (n/a)]
-	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:54) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:27) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.QueryParameterBindingImpl.validate(QueryParameterBindingImpl.java:90) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:55) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:494) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:115) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$BindableQuery.setParameter(QueryParameterSetter.java:327) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.lambda$setParameter$4(QueryParameterSetter.java:118) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$ErrorHandling$1.execute(QueryParameterSetter.java:141) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:118) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:82) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:74) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:95) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractStringBasedJpaQuery.doCreateQuery(AbstractStringBasedJpaQuery.java:92) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:227) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:155) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:143) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:152) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.4.8.jar:2.4.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.6.jar:5.3.6]
-	at com.sun.proxy.$Proxy162.findOpenedServiceRequest(Unknown Source) ~[na:na]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl.openedServiceRequest(IServiceRequestServiceImpl.java:32) ~[main/:na]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl$$FastClassBySpringCGLIB$$fdfa8c4d.invoke(<generated>) ~[main/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.6.jar:5.3.6]
-	at com.cg.apps.tataskyapp.services.IServiceRequestServiceImpl$$EnhancerBySpringCGLIB$$e24f3d34.openedServiceRequest(<generated>) ~[main/:na]
-	at com.cg.apps.tataskyapp.controllers.ServiceRequestController.openedServiceRequest(ServiceRequestController.java:56) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-2021-05-22 20:22:51 [HikariPool-5 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=32m42s248ms200µs900ns).
-2021-05-22 20:23:38 [RMI TCP Connection(55)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-2021-05-22 20:23:38 [RMI TCP Connection(55)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-22 20:23:38 [RMI TCP Connection(55)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-05-22 20:23:38 [RMI TCP Connection(55)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
-2021-05-22 20:23:38 [RMI TCP Connection(55)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2021-06-16 15:20:32 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Starting TataSkyApplicationNewApplication using Java 15.0.2 on panduu with PID 9056 (C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew\bin\main started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
+2021-06-16 15:20:32 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - No active profile set, falling back to default profiles: default
+2021-06-16 15:20:32 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-16 15:20:32 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-16 15:20:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-16 15:20:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 366 ms. Found 5 JPA repository interfaces.
+2021-06-16 15:20:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2021-06-16 15:20:40 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-16 15:20:40 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-06-16 15:20:40 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-16 15:20:40 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7942 ms
+2021-06-16 15:20:41 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-16 15:20:42 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-06-16 15:20:43 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-16 15:20:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-16 15:20:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-16 15:20:45 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-06-16 15:20:51 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-16 15:20:51 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:20:51 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-06-16 15:20:53 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-16 15:20:53 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:20:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2021-06-16 15:20:54 [restartedMain] INFO  c.c.a.t.TataSkyApplicationNewApplication - Started TataSkyApplicationNewApplication in 23.187 seconds (JVM running for 26.221)
+2021-06-16 15:21:44 [main] INFO  c.c.a.tataskyapp.ServiceRequestTest - Starting ServiceRequestTest using Java 15.0.2 on panduu with PID 944 (started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
+2021-06-16 15:21:44 [main] INFO  c.c.a.tataskyapp.ServiceRequestTest - No active profile set, falling back to default profiles: default
+2021-06-16 15:21:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-16 15:21:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 5 JPA repository interfaces.
+2021-06-16 15:21:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-16 15:21:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-06-16 15:21:48 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-16 15:21:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-16 15:21:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-16 15:21:50 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-06-16 15:21:53 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-16 15:21:53 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:21:54 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-16 15:21:55 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:21:55 [main] INFO  c.c.a.tataskyapp.ServiceRequestTest - Started ServiceRequestTest in 11.329 seconds (JVM running for 16.067)
+2021-06-16 15:21:55 [main] INFO  c.c.a.t.s.IServiceRequestServiceImpl - ******** Closing Request **** 
+2021-06-16 15:21:55 [main] INFO  c.c.a.t.s.IServiceRequestServiceImpl - ******** Creating ServiceRequest For User*****
+2021-06-16 15:21:55 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cg.apps.tataskyapp.TataSkyApplicationNewApplicationTests], using SpringBootContextLoader
+2021-06-16 15:21:55 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.cg.apps.tataskyapp.TataSkyApplicationNewApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-06-16 15:21:55 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cg.apps.tataskyapp.TataSkyApplicationNewApplicationTests]: TataSkyApplicationNewApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-06-16 15:21:55 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cg.apps.tataskyapp.TataSkyApplicationNewApplication for test class com.cg.apps.tataskyapp.TataSkyApplicationNewApplicationTests
+2021-06-16 15:21:55 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-06-16 15:21:55 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3f7a7ce6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1de6689c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d8512e9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@46f597f1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2a045e85, org.springframework.test.context.support.DirtiesContextTestExecutionListener@48861d1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@118f39f3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7baf7e2c, org.springframework.test.context.event.EventPublishingTestExecutionListener@73d7e7aa, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@349686e8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5c3e7128, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5ce03a9d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@10c67c1c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1067192a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3f7f9d3f]
+2021-06-16 15:21:55 [main] INFO  c.c.a.t.TataSkyApplicationNewApplicationTests - Starting TataSkyApplicationNewApplicationTests using Java 15.0.2 on panduu with PID 944 (started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
+2021-06-16 15:21:55 [main] INFO  c.c.a.t.TataSkyApplicationNewApplicationTests - No active profile set, falling back to default profiles: default
+2021-06-16 15:21:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-16 15:21:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 5 JPA repository interfaces.
+2021-06-16 15:21:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-16 15:21:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2021-06-16 15:21:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2021-06-16 15:21:57 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-06-16 15:21:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-16 15:21:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:21:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-16 15:21:58 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:21:58 [main] INFO  c.c.a.t.TataSkyApplicationNewApplicationTests - Started TataSkyApplicationNewApplicationTests in 2.99 seconds (JVM running for 19.267)
+2021-06-16 15:21:58 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cg.apps.tataskyapp.UserServiceTest], using SpringBootContextLoader
+2021-06-16 15:21:58 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.cg.apps.tataskyapp.UserServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-06-16 15:21:58 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cg.apps.tataskyapp.UserServiceTest]: UserServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-06-16 15:21:58 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cg.apps.tataskyapp.TataSkyApplicationNewApplication for test class com.cg.apps.tataskyapp.UserServiceTest
+2021-06-16 15:21:58 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-06-16 15:21:58 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7479cdf7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@71852f76, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@308f18c0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7d44e3c7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47e89fed, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1fcef6f9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@57cfb4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@d4f2f3d, org.springframework.test.context.event.EventPublishingTestExecutionListener@e5bce8e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@66ca8882, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4c0989f7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@384b718c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@68b4e7b5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5a88ecb9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5ace902e]
+2021-06-16 15:21:58 [main] INFO  c.cg.apps.tataskyapp.UserServiceTest - Starting UserServiceTest using Java 15.0.2 on panduu with PID 944 (started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
+2021-06-16 15:21:58 [main] INFO  c.cg.apps.tataskyapp.UserServiceTest - No active profile set, falling back to default profiles: default
+2021-06-16 15:21:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-16 15:21:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2021-06-16 15:21:59 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-16 15:21:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2021-06-16 15:22:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2021-06-16 15:22:00 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-06-16 15:22:00 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-16 15:22:00 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:22:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-16 15:22:01 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:22:01 [main] INFO  c.cg.apps.tataskyapp.UserServiceTest - Started UserServiceTest in 2.671 seconds (JVM running for 21.951)
+2021-06-16 15:22:01 [main] INFO  c.cg.apps.tataskyapp.UserServiceTest - ******** Find User by Username *****
+2021-06-16 15:22:01 [main] INFO  c.c.a.t.services.IUserServiceImpl - *** Finding user by username**vidit19
+2021-06-16 15:22:01 [main] INFO  c.cg.apps.tataskyapp.UserServiceTest - ******** Test Register Methods *****
+2021-06-16 15:22:01 [main] INFO  c.c.a.t.services.IUserServiceImpl - *** Creating User**
+2021-06-16 15:22:01 [main] INFO  c.c.a.t.services.IAccountServiceImpl - ******** Account Created*****
+2021-06-16 15:22:02 [main] INFO  c.c.a.t.services.IAccountServiceImpl - ******** Updating Account**** 
+2021-06-16 15:22:02 [main] INFO  c.cg.apps.tataskyapp.UserServiceTest - ******** Test Find User by Id *****
+2021-06-16 15:22:02 [main] INFO  c.c.a.t.services.IUserServiceImpl - *** Finding user by id**1
+2021-06-16 15:22:02 [main] INFO  c.cg.apps.tataskyapp.UserServiceTest - ******** Test Delete User *****
+2021-06-16 15:22:02 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cg.apps.tataskyapp.AccountServiceTest], using SpringBootContextLoader
+2021-06-16 15:22:02 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.cg.apps.tataskyapp.AccountServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-06-16 15:22:02 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cg.apps.tataskyapp.AccountServiceTest]: AccountServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-06-16 15:22:02 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cg.apps.tataskyapp.TataSkyApplicationNewApplication for test class com.cg.apps.tataskyapp.AccountServiceTest
+2021-06-16 15:22:02 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-06-16 15:22:02 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5acf51d7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@441a2d52, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@204b1903, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6c8b6782, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ceac22d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@598f065f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@21f48f6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@16745ba7, org.springframework.test.context.event.EventPublishingTestExecutionListener@c9518ee, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2d094add, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@28833fff, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1c1ee02b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3868c92e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5fd0235c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6e1d939e]
+2021-06-16 15:22:02 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - Starting AccountServiceTest using Java 15.0.2 on panduu with PID 944 (started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
+2021-06-16 15:22:02 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - No active profile set, falling back to default profiles: default
+2021-06-16 15:22:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-16 15:22:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
+2021-06-16 15:22:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-16 15:22:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2021-06-16 15:22:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2021-06-16 15:22:04 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-06-16 15:22:04 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-16 15:22:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:22:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-16 15:22:05 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:22:05 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - Started AccountServiceTest in 3.046 seconds (JVM running for 25.924)
+2021-06-16 15:22:05 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ******** Test Account Methods *****
+2021-06-16 15:22:05 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ********Test  Account Updated *****
+2021-06-16 15:22:05 [main] INFO  c.c.a.t.services.IAccountServiceImpl - ******** Updating Account**** 
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ******** Test Account Methods *****
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ******** Test Total Number Of Account in Betwwen Start Date and End Date *****
+2021-06-16 15:22:06 [main] INFO  c.c.a.t.services.IAccountServiceImpl - ******** countAccountsInPeriod  **** 
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ******** Test Account Methods *****
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ******** Test New Account Added  *****
+2021-06-16 15:22:06 [main] INFO  c.c.a.t.services.IAccountServiceImpl - ******** Account Created*****
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ******** Test Account Methods *****
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ********Test Get By Id  Account  *****
+2021-06-16 15:22:06 [main] INFO  c.c.a.t.services.IAccountServiceImpl - ******** Account found for id *******1
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ******** Test Account Methods *****
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ******** Test Account Deleted from Account Table *****
+2021-06-16 15:22:06 [main] INFO  c.c.a.t.services.IAccountServiceImpl - ******** Account Deleted for id *******1
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ******** Test Account Methods *****
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.AccountServiceTest - ********  Test Total Number of Accounts in Account Table *****
+2021-06-16 15:22:06 [main] INFO  c.c.a.t.services.IAccountServiceImpl - ******** countAccounts **** 
+2021-06-16 15:22:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cg.apps.tataskyapp.PackServiceImplTest], using SpringBootContextLoader
+2021-06-16 15:22:06 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.cg.apps.tataskyapp.PackServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-06-16 15:22:06 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cg.apps.tataskyapp.PackServiceImplTest]: PackServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-06-16 15:22:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cg.apps.tataskyapp.TataSkyApplicationNewApplication for test class com.cg.apps.tataskyapp.PackServiceImplTest
+2021-06-16 15:22:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-06-16 15:22:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@43c73b5c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b1381fc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@48b53f3d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3552eb5b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4fb53b76, org.springframework.test.context.support.DirtiesContextTestExecutionListener@38de4f1d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5973d3ec, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7b59f3aa, org.springframework.test.context.event.EventPublishingTestExecutionListener@1dd1093c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@57bd0b3c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10164e94, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@24e63b9f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@31eb5ed6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@e30573c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2c70da80]
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.PackServiceImplTest - Starting PackServiceImplTest using Java 15.0.2 on panduu with PID 944 (started by DELL in C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\TataSkyApplicationNew)
+2021-06-16 15:22:06 [main] INFO  c.c.a.tataskyapp.PackServiceImplTest - No active profile set, falling back to default profiles: default
+2021-06-16 15:22:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-16 15:22:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
+2021-06-16 15:22:07 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-16 15:22:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2021-06-16 15:22:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2021-06-16 15:22:07 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-06-16 15:22:08 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-16 15:22:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:22:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-16 15:22:08 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:22:08 [main] INFO  c.c.a.tataskyapp.PackServiceImplTest - Started PackServiceImplTest in 2.265 seconds (JVM running for 29.352)
+2021-06-16 15:22:09 [main] INFO  c.c.a.t.services.IPackServiceImpl - ******** Pack Created*****
+2021-06-16 15:22:09 [main] INFO  c.c.a.t.services.IPackServiceImpl - *******findingPacksInAscendingOrderByAmount*******
+2021-06-16 15:22:09 [main] INFO  c.c.a.t.services.IPackServiceImpl - *******findingPacksInAscendingOrderByAmount*******
+2021-06-16 15:22:09 [main] INFO  c.c.a.t.services.IPackServiceImpl - ******** Pack found for id *******null
+2021-06-16 15:22:09 [main] INFO  c.c.a.t.services.IPackServiceImpl - *******findingPacksInAscendingOrderByCost*******
+2021-06-16 15:22:09 [main] INFO  c.c.a.t.services.IPackServiceImpl - *******findingPacksInAscendingOrderByCost*******
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2021-06-16 15:22:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2021-06-16 15:46:48 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-16 15:46:48 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-16 15:46:48 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2021-06-16 15:46:50 [http-nio-8088-exec-1] INFO  c.c.a.t.services.IUserServiceImpl - *** Finding user by username**null
+2021-06-16 15:46:55 [http-nio-8088-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.cg.apps.tataskyapp.exception.UserNotFoundException: User Not found for username: null]
+2021-06-16 15:47:05 [http-nio-8088-exec-3] INFO  c.c.a.t.s.IServiceRequestServiceImpl - ******** Creating ServiceRequest For User*****
+2021-06-16 15:48:12 [http-nio-8088-exec-5] INFO  c.c.a.t.services.IUserServiceImpl - *** Finding user by username**null
+2021-06-16 15:48:12 [http-nio-8088-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.cg.apps.tataskyapp.exception.UserNotFoundException: User Not found for username: null]
+2021-06-16 15:48:21 [http-nio-8088-exec-7] INFO  c.c.a.t.s.IServiceRequestServiceImpl - ******** Creating ServiceRequest For User*****
+2021-06-16 15:51:07 [http-nio-8088-exec-9] INFO  c.c.a.t.services.IUserServiceImpl - *** Finding user by username**null
+2021-06-16 15:51:07 [http-nio-8088-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.cg.apps.tataskyapp.exception.UserNotFoundException: User Not found for username: null]
+2021-06-16 15:51:13 [http-nio-8088-exec-10] INFO  c.c.a.t.s.IServiceRequestServiceImpl - ******** Creating ServiceRequest For User*****
+2021-06-16 15:51:13 [http-nio-8088-exec-1] INFO  c.c.a.t.services.IUserServiceImpl - *** Finding user by username**null
+2021-06-16 15:51:13 [http-nio-8088-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.cg.apps.tataskyapp.exception.UserNotFoundException: User Not found for username: null]
+2021-06-16 15:51:52 [http-nio-8088-exec-3] INFO  c.c.a.t.s.IServiceRequestServiceImpl - ******** Creating ServiceRequest For User*****
+2021-06-16 15:52:01 [http-nio-8088-exec-5] INFO  c.c.a.t.s.IServiceRequestServiceImpl - ******** Creating ServiceRequest For User*****
+2021-06-16 16:00:52 [RMI TCP Connection(57)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2021-06-16 16:00:53 [RMI TCP Connection(57)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-16 16:00:53 [RMI TCP Connection(57)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16 16:00:54 [RMI TCP Connection(57)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-16 16:00:54 [RMI TCP Connection(57)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

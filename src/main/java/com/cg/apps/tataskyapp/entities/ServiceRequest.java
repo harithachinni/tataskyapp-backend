@@ -26,7 +26,7 @@ public class ServiceRequest {
 	private boolean statusOpened;
 
 	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "acc_id")
+	@JoinColumn(name = "accountId")
 	private Account account;
 
 	private String message;
@@ -94,5 +94,12 @@ public class ServiceRequest {
 	public void setStatusOpened(Boolean statusOpened) {
 		this.statusOpened = statusOpened;
 	}
+
+
+
+	/*public boolean getStatusOpened(boolean b) {
+		// TODO Auto-generated method stub
+		return false;
+	}*/
 
 }

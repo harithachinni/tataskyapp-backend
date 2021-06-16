@@ -42,6 +42,7 @@ public class Account {
 	private LocalDate registeredDate;
 	
 	@OneToMany(mappedBy = "account", cascade = CascadeType.ALL)
+	//@JoinColumn(name="ServiceRequestId")
 	private List<ServiceRequest> requests = new ArrayList<>();
 	
 	@ManyToOne( cascade = CascadeType.ALL)

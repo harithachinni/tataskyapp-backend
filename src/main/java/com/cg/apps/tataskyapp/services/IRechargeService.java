@@ -8,35 +8,26 @@ import com.cg.apps.tataskyapp.entities.Pack;
 import com.cg.apps.tataskyapp.entities.Recharge;
 
 public interface IRechargeService {
-
+	
 	Recharge createRecharge(Pack pack, Account account);
 
-	Recharge update(Recharge recharge);
+	
 
-	List<Recharge> findRechargesForUserInDescendingOrderByPurchasedDate(Account account);
+	List<Recharge> findRechargesForUserInDescendingOrderByPurchasedDate(Long accountId);
 
-	int rechargesForUserCount(Account account);
+	int rechargesForUserCount(Long accountId);
 
 	List<Recharge> findAllRechargesInPeriod(LocalDate startDate, LocalDate endDate);
 
 	int countRechargesInPeriod(LocalDate startDate, LocalDate endDate);
 
-	/**
-	 * calculates revenue by add of all recharges
-	 */
+
 	double totalRevenueInPeriod(LocalDate startDate, LocalDate endDate);
 
-	/**
-	 *
-	 * recharges done on a pack
-	 */
-	int rechargesCount(Pack pack);
+	int rechargesCountOnPack(Long id);
 
-	/**
-	 * expire recharge if validity is over, mark active flag as false, also remove
-	 * current plan from account
-	 */
-	Recharge expireIfValidityFinished(Account account, Recharge recharge);
+	
+	String expireIfValidityFinished(Long accountId, Long rechargeId);
 
 	List<Recharge> listall();
 }
